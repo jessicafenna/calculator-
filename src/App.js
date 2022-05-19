@@ -9,7 +9,7 @@ const App = () =>{
     setResult(result+value);
   }
   const total = () => { 
-    setResult(evaluate(result).toString());
+    setResult(evaluate(result));
   }
   const del = () => { 
     const value = result.slice(0,-1);
