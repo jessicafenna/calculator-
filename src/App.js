@@ -5,12 +5,10 @@ import { evaluate } from 'mathjs';
 const App = () =>{
   let [result,setResult] = useState("");
 
-  // const operators = ["/","*","-,","+","."]
-
   const updateResult = value => { 
     setResult(result+value);
   }
-  const calculate = () => { 
+  const total = () => { 
     setResult(evaluate(result).toString());
   }
   const del = () => { 
@@ -35,7 +33,7 @@ const App = () =>{
             
            </div>
 
-          <div className = "numberButtons">
+          <div>
             <div>
               <button onClick ={() => updateResult ('7')}>7</button>
               <button onClick ={() => updateResult ('8')}>8</button>
@@ -61,7 +59,7 @@ const App = () =>{
               <button onClick ={() => updateResult ('0')}>0</button>
               <button onClick = {() => updateResult(".")} >.</button>              
               <button onClick = {() => updateResult("/")} >/</button>
-              <button onClick ={calculate}>=</button>              
+              <button onClick ={total}>=</button>              
           </div>
     </div>
     </div>
