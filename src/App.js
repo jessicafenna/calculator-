@@ -35,7 +35,8 @@ const App = () =>{
            </div>
 
           <div>
-            <div> {numbers.map((button,index) =>{ 
+            <div className='buttons'> 
+              {numbers.map((button,index) =>{ 
           return (
           <button onClick= {() => clickHandler(button)} key = {index}>{button}</button>
           )

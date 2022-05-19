@@ -18,6 +18,10 @@ justify-content: center;
 background-color: #3C153B;
 }
 
+.buttons {
+  /* border: solid 6px aqua; */
+  text-align: center;
+}
 button { 
   border-radius: 15px;
   border: none;
