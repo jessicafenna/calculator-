@@ -7,7 +7,8 @@ const App = () =>{
   const numbers = [7, 8, 9, "/",4, 5, 6, "*",1, 2, 3, "-",0, ".", "+", "=", ]
 
   const clickHandler = (button) =>{ 
-    setResult (button === "=" ? evaluate (result) : button === "C" ? "" : result + button
+    // if button is = then evaluate the result, else whatever result is now and add the next button on 
+    setResult (button === "=" ? evaluate (result) : result + button
     )}
 
 
